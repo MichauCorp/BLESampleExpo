@@ -73,6 +73,9 @@ const DeviceModal: FC<DeviceModalProps> = (props) => {
           data={devices}
           renderItem={renderDeviceModalListItem}
         />
+        <TouchableOpacity style={modalStyle.ctaButton} onPress{closeModal}>
+          <Text style={modalStyle.ctaButtonText}> Stop Scan </Text>}
+        </TouchableOpacity>
       </SafeAreaView>
     </Modal>
   );
